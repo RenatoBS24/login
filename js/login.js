@@ -9,6 +9,14 @@ form.addEventListener('submit', (e) => {
     const email = emailInput.value;
     const password = passwordInput.value;
 
-    console.log(email, password);
+    if (email === '') {
+        alert('Campo email es requerido');
+        return;
+    }
+
+    if (password === '') {
+        alert('Campo contraseña es requerido');
+        return;
+    }
 
 });
